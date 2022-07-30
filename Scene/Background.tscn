@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scene/stars.tres" type="TileSet" id=2]
+[ext_resource path="res://Script/Background.gd" type="Script" id=3]
+[ext_resource path="res://Sprites/Background/gress.png" type="Texture" id=4]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 0, 1200 )
+script = ExtResource( 3 )
+
+[node name="backgroundImage1" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 210.931, 305.021 )
+scale = Vector2( 0.412244, 0.595662 )
+texture = ExtResource( 4 )
+
+[node name="backgroundImage2" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 212, 913 )
+scale = Vector2( 0.412109, 0.590765 )
+texture = ExtResource( 4 )
+
+[node name="TileMap" type="TileMap" parent="ParallaxLayer"]
+tile_set = ExtResource( 2 )
+format = 1
+tile_data = PoolIntArray( 65536, 5, 0, 65537, 5, 0, 65538, 5, 0, 262144, 4, 0, 262145, 4, 0, 262146, 4, 0, 393219, 5, 0, 393220, 5, 0, 393221, 5, 0, 589824, 4, 0, 589825, 4, 0, 589826, 4, 0, 589827, 4, 0, 589828, 4, 0, 851971, 5, 0, 851972, 5, 0, 851973, 5, 0, 2228227, 4, 0, 2293760, 4, 0, 2293761, 4, 0, 2293762, 4, 0, 2293763, 4, 0, 2359296, 5, 0, 2359297, 5, 0, 2359298, 5, 0, 2359299, 5, 0 )
