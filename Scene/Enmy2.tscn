@@ -5,7 +5,7 @@
 [ext_resource path="res://Sprites/Enemy/Enemy2.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 26, 25.5 )
+extents = Vector2( 31.5, 32 )
 
 [node name="Enemy2" type="Area2D"]
 script = ExtResource( 1 )
@@ -16,14 +16,14 @@ scale = Vector2( 0.665584, 0.665584 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -4.5 )
+position = Vector2( 0.5, 2 )
 shape = SubResource( 1 )
 
 [node name="Particles2D" parent="." instance=ExtResource( 2 )]
 one_shot = false
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
-position = Vector2( 0, -4 )
-scale = Vector2( 2.51081, 2.52578 )
+position = Vector2( 1.5, 2.3711 )
+scale = Vector2( 3.15, 3.16289 )
 
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

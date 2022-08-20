@@ -4,7 +4,7 @@ var motion = Vector2()
 
 func _physics_process(delta):
 	motion = Vector2()
-	motion.y += 10
+	motion.y += 2
 	translate(motion)
 	
 	#enemy hit laser

@@ -6,7 +6,7 @@ var death = false
 func _physics_process(delta):
 	var pos = $".".get_position_in_parent()
 	motion = Vector2()
-	motion.y += 5
+	motion.y += 2
 
 	translate(motion)
 
@@ -19,7 +19,7 @@ func _physics_process(delta):
 	var bodies =  get_overlapping_bodies()
 	for body in bodies:
 		if body.name == "Player":
-			Global.hit(4)
+			Global.hit(2)
 			$"/root/Player".get_node("AnimationPlayer").play("New Anim")
 			death()
 
@@ -30,15 +30,11 @@ func _on_VisibilityNotifier2D_screen_exited():
 #enemy shoot system
 func _on_Timer_timeout():
 	var laser =  Enemylaser.instance()
-	# var laser2 = Enemylaser.instance()
 	if death:
 		pass
 	else:
 		get_parent().add_child(laser)
-		# get_parent().add_child(laser2)
 		laser.position = $Position2D.global_position
-		# laser2.position = $Position2D2.global_position
-
 
 #execute when enemy is desytroyed
 func death():
