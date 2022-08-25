@@ -2,16 +2,11 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemyShip2.png-94b1f2dd3c09b816dc560ebf9a11bb3e.stex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
-source_file="res://Sprites/Enemy/enemyShip2.png"
-dest_files=[ "res://.import/enemyShip2.png-94b1f2dd3c09b816dc560ebf9a11bb3e.stex" ]
-
+source_file="res://player.jpg"
 [params]
 
 compress/mode=0

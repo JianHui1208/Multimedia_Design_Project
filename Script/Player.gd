@@ -18,10 +18,8 @@ func _physics_process(delta):
 
 	if Input.is_action_pressed("ui_right") and gameOver == false:
 		motion.x = Speed
-		$Animation.play("Right")
 	elif Input.is_action_pressed("ui_left")and gameOver == false:
 		motion.x = -Speed
-		$Animation.play("Left")
 	elif Input.is_action_pressed("ui_down")and gameOver == false:
 		motion.y = Speed
 	

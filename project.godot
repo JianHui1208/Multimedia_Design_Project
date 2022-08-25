@@ -14,7 +14,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Space striker-beta"
+config/name="Tank Battle"
 run/main_scene="res://Scene/Menu.tscn"
 config/windows_native_icon="res://player.ico"
 
